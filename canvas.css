@@ -4,7 +4,7 @@ html {
 }  
 body {
     font-family: 'Fira Sans', sans-serif;
-    height: 500vh;
+    height: 350vh;
     /* have to match bg color to color of image */
     background: #000;
     color: #ddd;
@@ -65,7 +65,9 @@ footer {
 }
 @media screen and (min-width: 900px) {
     canvas {
-        max-height: 80vh;
+        height: auto;
+        width: 100%;
+        z-index: 0;
     }
     div.text h3 {
         padding: 0 35%;
