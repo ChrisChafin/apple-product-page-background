@@ -4,7 +4,7 @@ const canvas = document.getElementById("main-hero-lightpass");
 // canvas context
 const canvasContext = canvas.getContext("2d");
 // frame count
-const numberOfFrames = 215;
+const numberOfFrames = 147;
 //current frame
 const currFrame = index => (
     `https://www.apple.com/105/media/us/airpods-pro/2019/1299e2f5_9206_4470_b28e_08307a42f19b/anim/sequence/large/01-hero-lightpass/${index.toString().padStart(4, '0')}.jpg`
