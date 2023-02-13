@@ -38,12 +38,18 @@ h3 a::after {
 }
 canvas {
     position: fixed;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
     max-width: 100vw;
     max-height: 100vh;
+    width: auto;
+    height: 100%;
+    aspect-ratio: auto 400 / 456;
 }
+canvas#main-hero-mobile {
+    display: block;
+}
+canvas#main-hero-desktop {
+    display: none;
+}   
 div.text {
     position: relative;
     width: 100%;
@@ -63,12 +69,18 @@ footer {
     background: #000;
     width: 100%;
 }
-@media screen and (min-width: 900px) {
+/* desktop */
+@media screen and (min-width: 768px) {
     canvas {
-        height: auto;
-        width: 100%;
+        aspect-ratio: auto 1464 / 824;
         z-index: 0;
     }
+    canvas#main-hero-desktop {
+        display: block !important;
+    }
+    canvas#main-hero-mobile {
+        display: none !important;
+    }    
     div.text h3 {
         padding: 0 35%;
     }
