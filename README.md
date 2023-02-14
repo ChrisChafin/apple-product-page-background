@@ -2,7 +2,7 @@ This page shows how Apple creates their famous moving backgrounds used on Produc
 
 Smaller in scale but the core concept comes across. 
 
-Utilizes the "<canvas>" tag.
+Utilizes the HTML "canvas" tag.
   
 The background is not a video but an jpg file.
   
